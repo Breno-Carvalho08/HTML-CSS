@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex011</title>
+</head>
+<body>
+
+    <h1>Imagem dinânimca</h1>
+    <p>Tente abrir esse site em vários dispositivos ou diminua o tamanho do seu navegador.</p>
+
+    <picture><!--é usada para exibir uma imagem ou uma série de imagens alternativas em um documento da web. 
+        Essa tag é frequentemente usada em conjunto com as tags <source> e <img> 
+        para fornecer várias opções de imagens com diferentes resoluções, 
+        formatos ou tamanhos, dependendo das capacidades do dispositivo de visualização.-->
+
+        <source media="(max-width: 750px)" srcset="Imagens/Foto-peq.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-med.png" type="image/png">
+        <!-- Source: utilizado para a imagem se adaptar a diversos tamanhos (podemos dar valores a esses tamanhos)-->
+        <!-- Podendo ser tablet, celular e até a tela do seu computador. Na parte do media ="(max-width: 1050px)"
+        estamos dizendo que se a imagem for menor que 1050px o site irá carregar a imagem média na pasta imagens
+        (srcset="imagens/foto-med.png")-->
+
+        <img src="Imagens/foto-Grande.png" alt="Imagem Flexível">
+
+        <!--A ordem dos "sources" deve ser obedecida. Sempre que colocarmos uma imagem no site
+        devemos colocar a imagem base para o dispositivo que vamos trabalhar e quando for 
+        colocada imagens menores, a menor SEMPRE VEM PRIMEIRO. 
+        Olhando o exemplo acima, a menor imagem vem primeiro (foto-peq.png) e logo abaixo vem
+        a imagem média (foto-med.png) tendo como base a imagem grande (foto-Grande.png).
+        Se melhorar o entendimento, DA MAIOR PARA A MENOR DE BAIXO PARA CIMA.-->
+
+        <h1>Repoduzindo audio</h1>
+        
+        <!--Formatos de audios MP3 WAV OGG-->
+        <audio preload="auto" controls loop>
+            <source src="midia/Cartoon Bank Heist (Sting) - Doug Maxwell_Media Right Productions.mp3" type="audio/mpeg">
+            <source src="midia/Cartoon Bank Heist (Sting) - Doug Maxwell_Media Right Productions.mp3" type="audio/WAV">
+            <source src="midia/Cartoon Bank Heist (Sting) - Doug Maxwell_Media Right Productions.mp3" type="audio/OGG">
+        </audio>
+    </picture>
+    <p>Para baixar esse audio <a href="midia/Cartoon Bank Heist (Sting) - Doug Maxwell_Media Right Productions.mp3" download="midia/Cartoon Bank Heist (Sting) - Doug Maxwell_Media Right Productions.mp3">clique aqui</a></p>
+    
+    
+</body>
+</html>

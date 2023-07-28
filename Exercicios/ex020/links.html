@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*PSEUDO-CLASSES(:): são palavras que definem estados de elementos dentro do HTML */
+        /*PSEUDO-ELEMTENTO(::): eles podem agir nos elementos, nos id's, nas classes, eles
+          mexem no conteudo periférico do elemento*/
+        a{
+            color: blueviolet;
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: crimson;
+            transition: 0.2s;
+            font-weight: bold;
+        }
+
+        a:visited{ /*Essa pseudo-classe servirá para que o usuário saiba em que site ele ja entrou
+                    ficando de uma outra cor depois de selecionado*/
+            color: rgb(114, 11, 31);
+        }
+
+        a:active{ /*Essa pseudo-classe será para quando clicarmos e abrirmos o site para que o link fique selecionado
+                    indicando qual site está aberto*/
+            color: rgb(16, 124, 124);
+        }
+
+        a::before{
+            content: '[link] ';
+            color: rgb(179, 182, 182);
+        }
+
+        a::after{
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: 100;
+            color: rgb(179, 182, 182);
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/">Cana do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com">Site do CursoemVideo</a></li>
+    </ul>
+    
+</body>
+</html>

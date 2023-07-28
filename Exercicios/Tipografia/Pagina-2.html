@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tipografia </title>
+    <link rel="stylesheet" href="../Psicologia das Cores/style.css">
+    <link rel="shortcut icon" href="Tipografia.ico" type="image/x-icon">
+    <style>
+       div{
+            width: 210px;
+            /*Largura para passar o mouse por cima e aparecer a imagem*/
+        }
+
+        /*Comando para quando passsar o mouse por cima mudar a cor do texto*/
+        div:hover{
+            color: #FA739E;
+        }
+
+        /*Comando que faz a imagem sumir*/
+        div > picture{
+            display: none;
+        }
+
+        /*Comando para quando passar o mouse por cima da frase aparecer a imagem*/
+        div:hover > picture{
+            display: block;
+    
+        }
+    </style>
+</head>
+
+<body>
+    
+    <main>
+        <h1>Anatomia do tipo</h1>
+        <p>Quando vamos fazer um site é importante saber qual fonte utilizar para chamar mais atenção do usuário.</p>
+        <p>
+        Temos atributos nas letras importantes para levar em conta, como: <strong>altura-x (letras minúsculas), altura das
+        maiúsculas, ascendente, descencente e corpo
+        </strong></p>
+        <picture>
+            <source media="(max-width: 650px )" srcset="tipografia_anatomia-M.jpg" type="image/jpg">
+            <img src="tipografia_anatomia.jpg" >
+        </picture>
+        <p><strong>Anatomia Geometrica: </strong>haste, arco, filete, esporão, vértice, terminal.</p>
+        <p><strong>Anatomia Humanizada: </strong>braço, perna, pé, espinha, bojo, oco, orelha, cauda.</p>
+        <p><strong>Categorias de Fontes: </strong>Serifadas, sans-serif (sem serifas), monoespaçadas, handwiriting
+        e display</p>
+
+        <div>
+            <strong>Anatomia das fontes</strong> (passe o mouse)
+            <picture>
+                <source media="(max-width:650px )" srcset="tipografia-anatomia-01-P.jpg" type="image/jpg">
+                <img src="tipografia-anatomia-01-M.jpg">
+            </picture>
+        </div>
+    
+        <h2>Carregando Fontes externas</h2>
+        <p>Caso não tenha uma fonte certa no VisualG que o seu cliente queira, podemos tanto utilizar uma fonte que está na internet
+           como uma fonte que ele desenvolveu e disponibilizou para nós utilizarmos. Podemos fazer uso então do "@import" ou "@font-face".</p>
+        <p><strong>@import:</strong> iremos utilizar o <a href="https://fonts.google.com/" target="_blank" rel="external">Google Fonts</a> que nos dará
+        uma grande variedade de fontes para utilizarmos.</p>
+        <p><strong>@font-face:</strong> também podemos utilizar o Google Fonts, mas aqui o arquivo terá que ser baixado,
+        e ele tera a seguinte estrutura.</p>
+
+        <p style="font-style: normal;">
+            @font-face {<br>
+                font-family: (nome que nós iremos dar para colocar a fonte no nosso site)<br>
+                src: url("Diretório do arquivo baixado") <strong>EX: src: url(Fontes/Arial.ttf)</strong><br>
+            }
+        </p>
+        <p>Na parte do url ainda vamos colocar o "format()", que no caso do exemplo será "format('truetype')".
+            Podemos ter ainda o ".otf" (opentype) que se fosse o caso substítuiria o ".ttf" e o "truetype".
+        </p>
+        <p><mark>Obs: sempre que vamos decidir a fonte que iremos usar é melhor colocarmos mais de uma, pois assim o navegador pode utilziar aquela 
+            que ele encontrar já que alguns podem não ter a fonte que você deseja.
+            (font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif). Por isso é colocado dessa forma, como se fosse pulando de
+            uma fonte para a aoutra até encontrar aquela que o site possuir.</mark></p>
+
+        <h2>Medidas das Fontes</h2>
+        <p><strong>Medidas absolutas:</strong> 
+            cm, mm, in (polegada), px (pixel), pt (ponto) (Utilizada no word), pc (paica). (pt e pc não é recomendado utilizar).
+            Segundo a W3C devemos utilzar "px" ou "em". <br>
+            <mark><strong>1em = 16px</strong></mark></p>
+
+        <p> <strong>Medidas relativas: </strong>
+            em (relativa a altura "m" de uma fonte), ex (relativa a altura "x" de uma fonte), rem,
+            vw (view width), vh (view height), % </p>
+        
+            <p><strong>ShotHand: </strong><br>
+
+                <mark>font-style -> font-weight -> font-size -> font-family</mark> <br>
+    
+                font-style: italic;<br>
+                font-weight: normal;<br>
+                font-size: 1.5em;<br>
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;<br>
+                EX -> font: italic (font-style) bolder (font-weight) 2.5em (font-size) arial (font-family);
+            </p>
+
+            <p>Caso tenha uma fonte que queremos utilizar porém ela está em uma imagem, podemos utilizar os sguintes sites: <br>
+                <strong>
+                    <a href="https://www.whatfontis.com" target="_blank" rel="external">whatfontis</a><br>
+                    <a href="https://www.myfonts.com" target="_blank" rel="external">MyFonts</a><br>
+                    <a href="https://www.fontsquirrel.com/matcherator" target="_blank" rel="external">FontSquirrel</a>
+                </strong>
+            </p>
+       <a href="../Psicologia das Cores/index.html">Página 1</a>
+       <a href="../O CSS/Css.html">Página 3</a>
+    </main>
+    
+</body>
+</html>

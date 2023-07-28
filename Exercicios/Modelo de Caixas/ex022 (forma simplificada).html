@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixa</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+        @font-face {
+            font-family: 'Importado';
+            src: url('../ex018/Fontes/Breaking.ttf') format('truetype');
+        }
+        body{
+            font-family: 'Inconsolata', monospace;
+            line-height: 1.5em;
+            background-image: linear-gradient(45deg, #ED9B40, #F78743, #E06A47, #F75343, #ED4063);
+        }
+      
+        div{
+            width: 700px;
+            text-align: justify;
+            
+        }
+        .img{
+            width: 850px;
+        }
+        h1{
+           
+            width /*largura*/: 250px;
+            height /*Altura*/: 35px;
+            background-color: lightgrey;
+            border: 10px solid red;
+            padding: 15px 5px 5px 15px;
+            outline: 30px solid blue;
+            margin: 50px 50px 50px 50px;
+            /*Importante: so trabalhamos com um valor no border, padding, outline e margin se os valores forem iguais para
+              todas as medidas, caso contrário cada valor deve ser colocado para especificar a altura e largura ou a distância
+              que eles ficarão do texto. E quando formos colocar as medidas, COMEÇAMOS pela parte de cima e vamos no sentido 
+              horário colocando os outros demais valores.
+              Caso a gente coloque apenas dois valores, eles serão aplicados na parte superior e inferior e nas laterais, ou seja: 
+              
+              padding: 10px 20px 
+
+              padding-top:10px 
+              padding-bottom:10px 
+              padding-right:20px 
+              padding-left:20px
+              */
+        }
+
+        h2{
+            background-color: azure;
+            border: green solid 10px;
+            outline: red solid 5px;
+            width: 200px;
+        }
+        a{
+            /*
+
+            display: block; podemos transformar os inline-level em box level e vice versa
+            display:block --> box-level
+            display:inline --> inline-level
+            display:inline-block --> possui caracteristicas dos dois tipos de caixas
+            (por exemplo não temos a quebra de linha (inline-level) e temos algumas características
+            do box-level.)
+
+            */ 
+            background-color: azure;
+            padding: 5px;
+            border: red dotted 3px;
+            outline: green solid 4px;
+            /* 
+            temos outros estilos de border e outline, podendo ser pontilhado, normal, uma 
+            borda em 3D, tracejado, vários tipos.
+            */
+
+        }
+      
+    </style>
+</head>
+<body>
+
+    
+        <main>
+            <h1>Modelo de Caixa</h1>
+            <h2>Como Funciona?</h2>
+            <div>
+                <p> Podemos simplificar a forma de estilo fazendo da seguinte forma: <br>
+                    <ul>
+                        <li>border: 10px solid red</li><br>
+                        <li>Outline: 30px solid blue</li><br>
+                        <li>Padding (se necessário): 10px (cima) 15px (direita) 20px (baixo) 15px (esquerda)</li><br>
+                        <li>margin (se necessário): 0px 10px 20px 30px</li>
+                    </ul><br>
+                    Tambem podemos utilzar o <strong>Margin: auto</strong>. Assim o navegador calcula a distancia
+                    automaticamente das margens da esquerda e da direita para que o bloco seja colocado no meio do navegador,
+                    independente do tamanho da janela.
+                </p>
+                    Organizando de dentro para fora ficamos com a seguinte ordem:
+                    <ol>
+                        <li>Altura e Largura da caixa do texto</li><br>
+                        <li>Padding (preenchimento): distância da borda (border) para dentro.</li><br>
+                        <li>Border</li><br>
+                        <li>Outline: fica dentro do espaço da margem (margin) e do lado de fora da borda.</li><br>
+                        <li>Margin: distância da borda (border) para fora.</li>
+                    </ol>
+            </div>
+            <h2>Tipos de caixa</h2>
+            <p>Temos caixas do tipo <strong>Box-level</strong> e do tipo <strong>Inline-level</strong>.</p>
+            <div class="img">
+                <picture>
+                    <img src="Box-level-P.png">
+                    <img src="Inline-level-P.png">
+            
+                </picture>
+            </div>
+            <p>
+                Além da <strong>div</strong> no Box-level e do <strong>span</strong> no Inline-level, temos outras tags
+                que também se aplicam a eles: <br>
+                <ul>
+            
+                        <strong>Box-level</strong>
+                        <li>&lt;div&gt;</li>
+                        <li>&lt;h1 - h6&gt;</li>
+                        <li>&lt;p&gt;</li>
+                        <li>&lt;main&gt;</li>
+                        <li>&lt;header&gt;</li>
+                        <li>&lt;nav&gt;</li>
+                        <li>&lt;article&gt;</li>
+                        <li>&lt;aside&gt;</li>
+                        <li>&lt;footer&gt;</li>
+                        <li>&lt;form&gt;</li>
+                        <li>&lt;video&gt;</li><br>
+                        <strong>Inline-level</strong>
+                        <li>&lt;span&gt;</li>
+                        <li>&lt;a&gt;</li>
+                        <li>&lt;code&gt;</li>
+                        <li>&lt;small&gt;</li>
+                        <li>&lt;strong&gt;</li>
+                        <li>&lt;em&gt;</li>
+                        <li>&lt;sup-sub&gt;</li>
+                        <li>&lt;label&gt;</li>
+                        <li>&lt;button&gt;</li>
+                        <li>&lt;input&gt;</li>
+                        <li>&lt;select&gt;</li>
+                </ul>
+            </p>
+            <p>
+                Como ja temos um exemplo de uma caixa do tipo box-level,
+                vamos colocar um exemplo agora de uma caixa do tipo inline-level:
+            </p>
+            <p>
+                <a href="#">Exemplo de caixa <strong>Inline-level</strong></a> , podemos escrever logo
+                após ela sem que ocorra a quebra de linha.
+            </p>
+        </main>
+</body>
+</html>

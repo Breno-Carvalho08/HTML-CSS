@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex011b</title>
+</head>
+<body>
+
+    <h1>Testando imagens</h1>
+
+    <picture>
+        <source media="(max-width: 816px)" srcset="Imagens/imagem-p.png" type="image/png">
+        <!-- Aqui está acontecendo o seguinte, quando o site atingir 816px (e diminuir a tela ainda mais) de largura ele ira trocar da 
+        imagem média para a imagem pequena-->
+        <source media="(max-width: 1300px)" srcset="Imagens/imagem-m.png" type="image/png">
+         <!-- Aqui está acontecendo o seguinte, quando o site atingir 1300px (e diminuir a tela ainda mais) de largura ele ira trocar da 
+        imagem grande para a imagem média -->
+        <img src="Imagens/imagem-g.png" alt="Guanabara">
+        
+        
+    </picture>
+    
+</body>
+</html>

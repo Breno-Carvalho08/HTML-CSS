@@ -1,0 +1,37 @@
+@charset "UTF-8"; /* Criamos uma regra para o CSS ser compatível com acentuações. */
+
+        body{
+
+            background-color: rgb(10, 112, 24);
+
+        }
+
+        h1{
+
+            color: rgb(0, 0, 133);
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        h2{
+
+            color: rgb(72, 255, 0);
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        p{
+
+            text-align: justify;
+            color: rgb(107, 0, 107);
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        a{
+
+            color: rgb(138, 0, 0);
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }

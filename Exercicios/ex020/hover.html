@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            font-size: larger;
+        }
+
+        div > p{
+        /*Isso significa que temos um parágrafo dentro de uma div (um parágrafo filho dessa div)
+          Representado pelo sinal de maior(>)*/
+            display: none;
+        }
+
+        div:hover > p{
+        /*Aqui acontece o que o hover propõe. Assim que passamos o mouse por cima o texto escondido aparece*/
+            display: block;
+            color: darkgreen;
+            background-color: aqua;
+            width: 250px;
+        }
+
+       div:hover{
+            color: darkblue;
+       }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passae o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Fontes externas</title>
+    <style>
+        @font-face {
+            font-family: 'Breaking';
+            src: url('Fontes/Breaking.otf') format('opentype'), url('Fontes/Breaking.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            /*O font-face é um comando que daremos para carregar o estilo de uma fonte que achamos na internet ou que o cliente
+              deseja utilizar e aplicamos no site 
+              
+              -Quando formos aplicar a fonte temos que baixar os arquivos e colocalos em uma pasta separada ao nossos códigos.
+              -Também precisamos escrever a fonte como é o caso do font-face acima, escrevemos tanto o "Breaking.otf" como o
+              "Breaking.ttf".
+              -Na parte do "format()" seá colocado o formato do arquivo, .otf(opentype) ou .ttf(truetype). Temos outros dois
+              tipos de arquivos que se necessário podem ser colocados também.
+              -Conseguimos estilizar toda a fonte a partir do "font-face" e deixar ele do jeito que queremos, fonte mais fina,
+              letras maiores, peso normal e etc*/
+        }
+        @font-face {
+            font-family: 'Rushfeel';
+            src: url('Fontes/Rushfeel.otf') format('opentype'), url('Fontes/Rushfeel.ttf') format('truetype');
+            font-size: 1.5em;
+            font-weight: normal;
+        }
+        /*
+            Tipos de Format()
+            -opentype(otf)
+            -truetype(ttf)
+            -embedded-opentype
+            -truetype-att
+        */
+
+        h1{
+            font-family: 'Breaking';
+            font-size: 2em;
+
+        }
+        p{
+            font-family: 'Rushfeel';
+
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Título</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In ullam, 
+        delectus perspiciatis ducimus recusandae possimus iusto explicabo 
+        facilis quas ipsa eos quaerat ratione sapiente qui! Doloribus illum modi minus doloremque.</p>
+    
+</body>
+</html>

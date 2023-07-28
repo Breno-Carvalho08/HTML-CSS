@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/*
+    em HTML é id = em CSS #
+    id = #
+    em HTML é class = em CSS .
+    class = .
+*/
+
+/*
+Não podemos te vários "id's" em um mesmo código HTML, segundo a WC3 está errado trabalhar dessa forma.
+Agora se quisermos que um mesmo elemento tenha as características do outro podemos utilizar as "classes"
+(representadas por um ponto (.)).
+id = único (por página HTML)
+classe = múltiplo
+Dentro de um seletor podemos ter id (sozinho), id e classe, class (sozinho) ou não ter nada (se aplica as configurações padrão). 
+
+*/
+body{
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em; /*Espaçamento entre linhas*/
+}
+
+h1{
+    color: rgb(31, 136, 136);
+}
+
+/* Trabalhando com id's */
+h1#principal{ /*Podemos ou não colocar o nome do seletor que está identificado, que nesse caso é o H1*/
+    color: blue;
+}
+
+/* Trabalhando com Classes */
+.basico{
+    color: forestgreen;
+}
+
+.intermediario{
+    color: rgb(202, 202, 79);
+}
+
+.avancado{
+    color: red;
+}

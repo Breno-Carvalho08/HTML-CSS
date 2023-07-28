@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclasses</title>
+    <style>
+        div{
+            display: inline-block;
+            border: 1px solid black;
+            text-align: center;
+            width: 200px;
+            height: 200px;
+        }
+
+        div:hover{ 
+        /* ":hover" é uma pseudoclasse de estado. Ela significa que quando o mouse passar peça div, 
+            acontecerá um evento, seja ele mudar de cor ou carregar uma animação*/
+           background-color: rgb(98, 175, 21); 
+           transition: 0.5s;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="d1">01</div>
+    <div class="d2">02</div>
+    <div class="d3">03</div>
+    
+</body>
+</html>

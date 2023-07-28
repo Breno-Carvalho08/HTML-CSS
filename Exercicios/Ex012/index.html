@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos no seu site</title>
+</head>
+<body>
+
+    <h1>Colocando Videos no seu site Hospedado Localmente(Formato MP4)</h1>
+    <p>Quando vamos inserir um vídeo no site temos que estar cientes sobre a sua compatibilidade com o próprio navegador.</p>
+    <p>Temos os seguintes formatos: MP4, M4V, WebM e OGV</p>
+    <p>Como alguns navegadores não possuem suprote para todos os tipos de mídia de vídeo, faremos da seguinte forma:</p>
+    <p>&lt; video &gt;
+            <p>Selecionar o &lt; source:src &gt;</p>
+            <p>Para cada tipp de mídia (MP4, M4V, WebM e OGV...)</p>
+            &lt; /video &gt;   
+        </p>
+
+        <p>Com o parâmetro "poster" dentro da tag &lt; video &gt; podemos colocar uma thumbnail.</p>
+        <p>Ex &lt; video poster="(Diretório da imagem)"&gt; e o que se segue são os comando normais. </p>
+    
+    <video controls height="500">
+        <source src="Midia/pexels-leonardo-dourado-16754886-720x1280-30fps.mp4" type="video/mp4">
+<!-- <source src="Midia/pexels-leonardo-dourado-16754886-720x1280-30fps.m4v" type="video/m4v"> -->
+<!-- <source src="Midia/pexels-leonardo-dourado-16754886-720x1280-30fps.webm" type="video/webm"> -->   
+<!-- <source src="Midia/pexels-leonardo-dourado-16754886-720x1280-30fps.OGV" type="video/ogv"> -->
+</video>
+    <p>
+        Caso o cliente peça para que os vídeos do site sejam hospedados no seu próprio site, ele terá que saber que o custro de hospedagem pode aumentar e muito 
+        dependo da quantidade de vídeos colocados e tambem do tamanho dos arquivos de vídeos que ficaram hospedados
+    </p>
+    <p>
+        A ordem em que você coloca os "sources" importa! Ele vai tentar carregar o vídeo com base nessa ordem.
+        <ol>
+            <li>mp4</li><br>
+            <li>m4v</li><br>
+            <li>webm</li><br>
+            <li>ogv</li>
+        </ol>
+    </p>
+
+    <p><a href="index2.html">Clique aqui</a> para ver o segundo vídeo</p>
+    <p>Para ver o terceiro vídeo <a href="index3.html" >Clique aqui</a></p>
+
+    
+    
+</body>
+</html>

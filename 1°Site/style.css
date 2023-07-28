@@ -1,0 +1,165 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;600;700;800;900&display=swap');
+*{
+    padding: 0px;
+    text-decoration: none;
+    margin: 0px;
+}
+
+:root{
+    --fonte-textos: 'Tektur', cursive;
+}
+
+body{
+    font-family: var(--fonte-textos);
+    background-image: linear-gradient(90deg,#7C58FF, #464EE8,#4D85FF);
+    line-height: 1.5em;
+    text-align: justify;
+    width: 100%;
+}
+
+.cabecalho{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 24px;
+    margin: 20px 5px;
+    line-height: 2em;
+   
+}
+
+.cabecalho-menu{
+    display: flex;
+    flex-direction: row; /*Faz com que os elementos se comportem em uma linha, um seguido do outro.*/
+    justify-content: flex-end; /*Os elementos são alinhados no final da página*/
+    flex-wrap: wrap;
+    font-size: 20px;
+    gap: 60px;
+    padding: 10px; 
+    line-height: 1.2em; 
+
+    
+}
+
+.links-cabecalho{
+    color: rgb(255, 255, 255);
+}
+
+.links-cabecalho:hover{
+    color: rgb(0, 0, 0);
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.comeco-cabecalho{
+    border: 0.1px solid rgb(0, 0, 0);
+}
+
+article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.conteudo1{ 
+    display: flex;
+    flex-direction: column;
+    font-size: 36px;
+    margin: auto;
+}
+
+.titulo-conteudo{
+    color: white;
+    font-size: 40px;
+    margin: 70px 10px 10px 10px;
+    line-height: 1.2em;
+}
+
+.conteudo-texto{
+    
+    color: white;
+    font-size: 24px;
+    text-align: justify;
+    margin: 50px 10px 50px 10px;
+    line-height: 2em;
+   
+   
+}
+
+
+.conteudo-texto-2{
+    color: white;
+    font-size: 24px;
+
+}
+
+ .imagem-principal{
+    display: block;
+    margin: auto;
+    
+}
+
+.imagem{
+    width: 80%;
+    
+   
+}
+
+.botao{
+    max-width: 400px;
+    min-width: 250px;
+    height: 50px;
+    padding: 5px;
+    margin: 80px 10px 30px 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 1em;
+}
+
+
+.botao:hover{
+    cursor: pointer;
+    background-color: #5b42b4;
+    color: white;
+    transition: 0.5s;
+    box-shadow: 0px 0px 30px #11004e;
+}
+
+.comeco-rodape{
+    border: 0.1px solid rgb(0, 0, 0);
+    margin-top: 100px;
+
+}
+
+ol{
+    width: 100%;
+}
+
+
+.rodape{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 2em;
+    font-size: x-large;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.texto-rodape{
+    margin: 1px 20px 10px 10px;
+}
+
+.imagem-rodape{
+    width: 50px;
+    height: 50px;
+    margin: 30px 10px;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tudo que vi até agora </title>
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+</head>
+<body>
+
+    <h1> Testando conhecimento (Resumo) </h1>
+
+        <h2>Hierarquia de Títulos </h2>
+            <p> Para colocarmos um título devemos ultilzar as hierarquias, sendo elas:</p>
+            <p> &lt; h1 &gt; até &lt; h6 &gt;. NUNCA podemos afetar essa hierarquia.</p>
+
+            <p>&lt; h1 &gt; Título de nível 1 </p>
+            <p>&lt; h2 &gt;Título de nível 2 </p>
+            <p>.</p>
+            <p>.</p>
+            <p>&lt; h6 &gt; Título de nível 6 </p>
+
+        <h2>Tag &lt; Sup &gt; e &lt; Sub &gt;</h2>
+            <p>Essas tags serão utilizadad para posicionarmos textos acima (SUPerior) ou abaixo (SUB) do texto principal.</p>
+            <p>Exemplo SUP : Formúlas Matemáticas (x <sup>3</sup> + 2x <sup>2</sup> - 4).</p>
+            <p>Exemplo SUB : Composição Química (H <sub>2</sub>O) ou um significado de alguma coisa (JavaScript <sub>Linguagem de Programação</sub>).</p>
+
+        <h2>Imagens inseridas no site e seus tamanhos </h2>
+            <p>Para inserirmos uma imagem podemos utilizar a tag &lt; img &gt;.</p>
+            <p>Para que a imagem se ajuste ao tamanho do site utilizaremos a tag &lt; picture &gt; juntamente com a tag &lt; source:media:type &gt;</p>
+            <p>Exemplo: </p>
+            <p>Nesse exemplo temos a tag &lt; source media="(max-width: )" srcset="" type="image/" &gt; onde: </p>
+            <p>Source media="(max-width: (indica o tamanho da largura max que a imagem vai))". Se a largura maxima for de 
+               450px assim que a tela atingir essa largura, a imagem irá reduzir ou aumentar o seu tamanho.
+            </p>
+            <p>srcset="": indica por qual imagem será substituida quando a largura for alterada.</p>
+            <p>type="image/": indica o tipo da imagem, que no caso é "image/png".</p><br>
+            <picture>
+                <source media="(max-width: 450px)" srcset="HTML5-logo-P.png" type="image/png">
+                <source media="(max-width: 650px)" srcset="HTML5-logo-M.png" type="image/png">
+                <img src="HTML5-logo-G.png" alt="LogoHTML5">
+            </picture>
+                <h3>Imagens por links e em outras pastas </h3>
+                <p>Quando queremos utilizar uma <strong>imagem pelo link dela</strong> é simples, basta no lugar do src"" da tag &lt; img &gt; colocarmos o link da imagem. Exemplo: </p>
+                <p>Entramos no google imagem, clicamos com o botão direito na imagem e vamos em <strong>"Copiar endereço da imagem"</strong> e colocamos no src="(link)"</p>
+                <p>Agora para acessarmos a <strong>imagem em outra pasta</strong> faremos o seguinte:</p>
+                <p>Assim que colocarmos a tag &lt; img &gt;, iremos novamente no parâmetro src="Ctrl + Espaço (selecionamos a pasta em que está a imagem.)"</p>
+                <p>Quando estivermos no arquivo <strong>dentro da pasta e quisermos voltar para a principal</strong> utilizaremos o seguinte: </p>
+                <p>&lt; img src="../PastaPrincipal.html"&gt;. O começo (../) significa que iremos retornar para fora da pasta em que estamos ou iremos selecionar algum arquivo fora dessa mesma pasta
+                    Caso a imagem estivesse na mesma pasta, seria "./" ou apenas colocar o link </p>
+        
+                <h2>Listas Ordenadas (ol), não Ordenadas (ul) e por definição (dl, dt e dd)</h2>
+            <p><h3>Listas Ordenadas:</h3> é uma lista númerada, como se seguisse uma ordem. </p>
+                <ol>
+                    <li>° Lugar</li><br>
+                    <li>° Lugar</li><br>
+                    <li>° Lugar</li><br>
+                </ol>
+            <p><h3>Lista Não Ordenadas:</h3> são apenas tópicos, não seguindo necessáriamente uma ordem.</p>
+                <ul>
+                    <li>Breno</li><br>
+                    <li>Caros</li><br>
+                    <li>Lucas</li><br>
+                    <li>Caio</li><br>
+                </ul>
+            <p><h3>Lista por Demarcação: funciona como significado de palavras</h3></p>
+                <dl>
+                    <dt>HTML5</dt>
+                    <dd>Linguagem de marcação</dd><br>
+                    <dt>CSS3</dt>
+                    <dd>Linguagem de estilo</dd><br>
+                    <dt>Java-Script</dt>
+                    <dd>Linguagem de Programação</dd><br>    
+                </dl>
+
+            
+
+        
+
+
+
+    
+
+</body>
+</html>

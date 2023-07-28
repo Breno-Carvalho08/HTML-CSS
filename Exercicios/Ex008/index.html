@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formatações de Títulos </title>
+    <style>
+
+        mark{
+
+            background-color: limegreen;
+
+        }
+    </style>    
+</head>
+<body>
+
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque: </h2>
+    <p>Aqui temos um exemplo de texto em negrito/destaque: <b>termo em negrito. </b></p>
+    <p>Porem a tag &lt; b &gt; não é semântica, focada na forma e não no significado</p>
+    <p>Agora temos outro exemplo de destaque/negrito mas agora com semântica <strong>termo em negrito.</strong></p>
+    <p>Aqui estamos priorizando muito mais o significado do que a forma, utilizando a tag &lt; strong &gt;.</p>
+
+    <h2> Itálito/Ênfase </h2>
+    <p>Seguindo a forma não semântica temos: <i>Frase em Itálico </i></p>
+    <p>Utilizando a tag &lt; i &gt;.</p>
+    <p>Agora de forma semântica, prezando pelo significado, temos: <em> Frase em Itálico.</em></p>
+    <p>Utilizando a tag &lt; em &gt; que significa "emphase". </p>
+
+    <h2>Texto Marcado</h2>
+    <p>Podemos criar também <mark style = "background-color: limegreen;"> textos marcados </mark></p>
+    <p>Fazemos isso utilizando a tag &lt; mark &gt;</p>
+    <p>Podemos alterar a cor da marcação utilizando o parâmetro dentro da tag mark </p> 
+    <p>&lt; mark style ="background-color: (cor desejada)" &gt;. Essa é a forma em HTML5 </p>
+    <p>Porem há uma forma de fazer em CSS, abrindo um seletor (mark), criando a propriedade (background-color) <br> e atribuindo o valor (limegreen). </p>
+    <p><mark> Outro texto marcado </mark></p>
+
+    <h2>Texto Grande e Pequeno</h2>
+    <p>Criando <big>textos grandes</big> (não semântico) e <small>textos pequenos</small> (semântico)</p>
+    <p>Utilizando a tag &lt; big &gt;. Essa é uma tag obsoleta e não semântica. </p>
+    <p>Utilzando a tag &lt; small &gt;. Essa é uma tag semântica e pode ser utilizada.</p>
+
+    <h2>Texto deletado e Inserido</h2>
+    <p>Podemos indicar um <del> texto como excluído </del> para indicar que ele deve ser lido mas não deve ser considerado</p>
+    <p>Para texto excluido utilizamos a tag &lt; del &gt; </p>
+    <p>Podemos indicar um <ins> texto como inserido </ins> para dar uma ênfase e indicar que ele foi adicionado depois</p> 
+    <p>Para indicar um texto inserido ou sublinhado utilizamos a tag &lt; ins &gt; </p>
+
+    <h2>Texto Sobrescrito e Subescrito</h2>
+    <p> 2 <sup>x + 3</sup></p>
+    <p>O texto Sobrescrito pode ser utilizado para fórmulas matemáticas</p>
+    <p>Fica <strong><mark> superior ao texto base </mark> </strong> </p>
+    <p>Agua H<sub>2</sub>O</p>
+    <p>Fica na <strong><mark>parte inferior</mark></strong> do texto base </p>
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> "Brincando" com a responsividade </title>
+    <style>
+        /*Configuração Global */
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /*Variáveis em CSS*/
+        :root{
+            --cor-fundo:gray;
+            --cor-titulos:white;
+            --cor-conteudo-principal:#8CB8DE;
+        }
+        
+        /*Configurações do site*/
+        body{
+            background-color: var(--cor-fundo);
+            
+        }
+
+        main{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .titulos{
+            color: var(--cor-titulos);
+        }
+
+     
+        .conteudo-principal{
+            background-color: var(--cor-conteudo-principal);
+            margin: 10px;
+            padding: 15px;
+            text-align: justify;
+            max-width: 700px;
+            min-width: 300px;
+            margin-bottom: 1020px;
+            
+            
+           
+           
+            
+    
+        }
+        article > iframe{
+            width: 100%;
+           
+
+        }
+        .conteudo-secundario{
+            background-color: #8CB8DE;
+            margin: 10px;
+            padding: 15px;
+            text-align: justify;
+            max-width: 700px;
+            min-width: 300px;
+            margin-bottom: 300px;
+            
+        }
+
+        img{
+            display: block;
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+        }
+   
+
+    </style>
+</head>
+<body>
+    <main>
+        <article class="conteudo-principal">
+            <h1 class="titulos"> Testanto caixas e suas larguras </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Id dignissimos dicta veritatis? Dolore architecto aliquid 
+                voluptates minima expedita vitae numquam quasi 
+                consectetur fugit placeat unde, quas Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Id dignissimos dicta veritatis? Dolore architecto aliquid 
+                voluptates minima expedita vitae numquam quasi 
+                consectetur fugit placeat unde, quas illo labore, enim fugiat!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil distinctio, 
+                nobis maxime aspernatur quidem quasi repellat cum in soluta labore quis 
+                officia delectus! 
+                Aspernatur sunt beatae maiores autem debitis reprehenderit!illo labore, enim fugiat!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil distinctio, 
+                nobis maxime aspernatur quidem quasi repellat cum in soluta labore quis 
+                officia delectus! 
+                Aspernatur sunt beatae maiores autem debitis reprehenderit!
+            </p>
+            <h2 class="titulos">Título 2 </h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Id dignissimos dicta veritatis? Dolore architecto aliquid 
+                voluptates minima expedita vitae numquam quasi 
+                consectetur fugit placeat unde, quas illo labore, enim fugiat!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil distinctio, 
+                nobis maxime aspernatur quidem quasi repellat cum in soluta labore quis 
+                officia delectus! 
+                Aspernatur sunt beatae Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Id dignissimos dicta veritatis? Dolore architecto aliquid 
+                voluptates minima expedita vitae numquam quasi 
+                consectetur fugit placeat unde, quas illo labore, enim fugiat!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil distinctio, 
+                nobis maxime aspernatur quidem quasi repellat cum in soluta labore quis 
+                officia delectus! 
+                Aspernatur sunt beatae maiores autem debitis reprehenderit!maiores autem debitis reprehenderit!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Id dignissimos dicta veritatis? Dolore architecto aliquid 
+                voluptates minima expedita vitae numquam quasi 
+                consectetur fugit placeat unde, quas illo labore, enim fugiat!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil distinctio, 
+                nobis maxime aspernatur quidem quasi repellat cum in soluta labore quis 
+                officia delectus! 
+                Aspernatur sunt beatae maiores autem debitis reprehenderit!
+            </p>
+            <iframe src="https://player.vimeo.com/video/766323945?h=a4cec3f8b9&color=ffffff&title=0&byline=0&portrait=0" 
+            width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </article>
+        
+        <div>
+            <aside class="conteudo-secundario">
+                <h2>Titulo 3</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Id dignissimos dicta veritatis? Dolore architecto aliquid
+                    voluptates minima expedita vitae numquam quasi
+                    consectetur fugit placeat unde, quas illo labore, enim fugiat!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil distinctio,
+                    nobis maxime aspernatur quidem quasi repellat cum in soluta labore quis
+                    officia delectus!
+                    Aspernatur sunt beatae Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Id dignissimos dicta veritatis? Dolore architecto aliquid
+                    voluptates minima expedita vitae numquam quasi
+                    consectetur fugit placeat unde, quas illo labore, enim fugiat!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil distinctio,
+                    nobis maxime aspernatur quidem quasi repellat cum in soluta labore quis
+                    officia delectus!
+                    Aspernatur sunt beatae maiores autem debitis reprehenderit!maiores autem debitis reprehenderit!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Id dignissimos dicta veritatis? Dolore architecto aliquid
+                    voluptates minima expedita vitae numquam quasi
+                    consectetur fugit placeat unde, quas illo labore, enim fugiat!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil distinctio,
+                    nobis maxime aspernatur quidem quasi repellat cum in soluta labore quis
+                    officia delectus!
+                    Aspernatur sunt beatae maiores autem debitis reprehenderit!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                   
+                   
+                </p>
+                <img src="HTML.avif" alt="">
+            </aside>
+           
+        </div>
+    </main>
+    
+</body>
+</html>

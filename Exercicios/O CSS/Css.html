@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Psicologia das Cores/style.css">
+    <style>
+
+        div:hover{
+            color: #df544a;
+            font-weight: 900;
+        }
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            height: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Começando estudos de CSS</h1>
+        <h2>Entendendo o que são Seletores e seus componentes</h2>
+        <p>
+            Seletores são os elementos presentes no HTML que vamos estilizar no CSS. Por exemplo: <br>
+            <mark>h1 (é um seletor) {<br>
+                <mark>background-color (uma propriedade): green (valor);<br></mark>
+                (e todo esse conjunto é uma <strong>declaração</strong>)  
+            }</mark>
+        </p>
+        <p>
+            h2 pode ser um seletor também, div's, parágrafos, todos os títulos, se puder ter estilo e ser estilizado pode ser um
+            seletor <br>
+            Agora se tivermos mais de um h1 na nossa página e quisermos mexer apenas nele, podemos trabalhar
+            com os "id's" ou com as classes. <br>
+            Não podemos ter vários "id's" em um mesmo código HTML, segundo a WC3 está errado trabalhar dessa forma.
+            Agora se quisermos que um mesmo elemento tenha as características do outro podemos utilizar as "classes"
+            (representadas por um ponto ( <strong>.</strong> )). <br>
+            id = único (por página HTML) <br>
+            classe = múltiplo <br>
+            Dentro de um seletor podemos ter id (sozinho), id e classe, class (sozinho) ou não ter nada (se aplica as configurações padrão).
+        </p>
+        <h2>Como diferenciar um ID de uma classe</h2>
+        <p>
+            Quando vamos trabalhar com ID's e classes em CSS temos uma diferenciação de como chama-las. 
+            Para ID's utilzamos "#" e para as classes utilizamos o ponto final ( <strong>.</strong> ).
+            <br>
+            Exemplo: &lt; h1 id = " título-pincipal "&gt; <br>
+            Para chamar esse h1 em específico iremos utilzar a "#" no CSS <br>            
+            #título-pincipal {} (Já no CSS esse comando). Não é necessário colocar o nome da tag h1 antes da "#" <br>
+            Agora para classes supondo que nosso site tenha dois h2, cada um com uma classe diferente.
+            <br>
+            &lt; h2 class = " título-secundário " &gt; <br>
+            &lt; h2 class = " Outro-título-secundário "&gt; <br>
+            As classes em CSS serão chamadas pelo "ponto final". Então em CSS ficará dessa forma: <br>
+            <strong>.</strong> título-secundário {} <br>
+            <strong>.</strong> Outro-título-secundário {}   
+        </p>
+
+        <h2>Utilizando Hover</h2>
+        <p>
+            "Hover" é uma pseudoClasse que consiste no seguinte : sempre que passar o mouse 
+            pelo seletor que estiver com o "hover" ele realizará uma ação que será programada
+            no momento que começarmos a estilziar o CSS. <br>
+            Exemplo : <br>
+            div:hover { color: darkblue; } -> aqui quando passarmos o mouse pelo elemento que estiver
+            na div ele mudará de cor para "darkblue" .
+        </p>
+            <h3>Escondendo textos e utilizando hover</h3>
+            <p>
+                Aqui é uma forma que podemos começar a utilziar o "hover" para dar um certo dinamismo
+                para o seu site. Quando criarmos uma "div" e colocarmos um parágrafo dentro dela podemos
+                esconder esse parágrafo digitido. <br>
+                <strong>1° Passo</strong> <br>
+                &lt; div &gt; <br> 
+                &lt; p &gt; Texto Escondido &lt; /p &gt; <br>
+                &lt; /div &gt; <br>
+                Esse texto pode ser escondido utilizando CSS: <br>
+                <strong>2° Passo</strong> : <br>div > p { display:none }: Isso significa que temos um parágrafo dentro de uma div (um parágrafo filho dessa div) . <br>
+                Representado pelo sinal de maior ( &gt; ). Aqui ele ainda não mostrará o texto escondido <br>
+                Para que isso aconteça iremos utilizar o <strong>Hover.</strong> <br>
+                <strong>3 °Passo : </strong> <br> div:hover > p {display : block} : utilizando o hover podemos mostrar o texto assim que passar o mouse
+                por cima.
+                <br>
+                Exemplo prático:
+
+                <div>
+                    Veja o texto escondido passando mouse por cima
+                    <p>Lá ele</p>
+                </div> <br>
+        <h2>Pseudo-classe e Pseudo-elemento</h2>
+        <p>
+            <strong>Pseudo-classes :</strong> são palavras que definem estados de elementos dentro do HTML. São representadas
+            nas CSS's com o "dois pontos ( <strong>:</strong> )". <br>
+            <strong>Pseudo-elemento :</strong> eles podem agir nos elementos, nos id's, nas classes, eles
+            mexem no conteudo periférico do elemento. São representados nas CSS's com o "2x dois pontos (<strong> : : </strong>)"
+        </p>
+                
+                
+            </p>
+            <a href="../Psicologia das Cores/index.html">Página 1</a>
+            <a href="../Tipografia/Pagina-2.html">Página 2</a>
+    </main>
+</body>
+</html>
