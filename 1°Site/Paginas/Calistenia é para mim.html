@@ -28,11 +28,18 @@
             text-align: justify;
             line-height: 1.5em;
             font-size: 20px;
-            outline: 3px solid rgb(5, 7, 146);
+            outline: 3px solid  rgb(39, 39, 39);
             padding: 5px;
             margin-left: 25%;
             margin-right: 10%;
             width: 50%;
+            transition: 0.8s;
+        }
+
+        .conteudo-escrito:hover{
+            letter-spacing: 0.2px;
+            line-height: 1.7em;
+            transition: 0.8s;
         }
 
         .titulo-terciario{
@@ -70,6 +77,94 @@
             margin: 1px 20px 10px 10px;
             font-size: 24px;
         }
+
+        .alavanca{
+            color: black;
+            transition: 0.4s;
+        }
+
+        .alavanca:hover{
+            text-decoration: underline;
+            color: white;
+            transition: 0.4s;
+
+        }
+
+        #text-area{
+            margin-bottom: 50px;
+        }
+
+        .i1{
+            width: 10px;
+            height: 10px;
+            background-color:  rgb(112, 112, 112);
+            position: absolute;
+            top: 233px;
+            right: 30%;
+            transform: rotate(325deg) scale(1.3);
+            transition: 0.7s;
+            
+        }
+        .conteudo-escrito:hover > .i1{
+            position: absolute;
+            right: 69%;
+            transition: 0.7s;
+        }
+
+        .i2{
+            width: 10px;
+            height: 10px;
+            margin-top: -12px;
+            background-color: rgb(112, 112, 112);
+            position: absolute;
+            right: 30%;
+            transform: rotate(325deg) scale(1.3);
+            transition: 0.7s;
+            
+        }
+
+        .conteudo-escrito:hover > .i2{
+            position: absolute;
+            right: 69%;
+            transition: 0.7s;
+        }
+
+        .i3{
+            width: 10px;
+            height: 10px;
+            margin-top: -12px;
+            background-color: rgb(112, 112, 112);
+            position: absolute;
+            right: 30%;
+            transform: rotate(325deg) scale(1.3);
+            transition: 0.7s;
+            
+        }
+
+        .conteudo-escrito:hover > .i3{
+            position: absolute;
+            right: 69%;
+            transition: 0.7s;
+        }
+
+        .i4{
+            width: 10px;
+            height: 10px;
+            margin-top: -12px;
+            background-color: rgb(112, 112, 112);
+            position: absolute;
+            right: 30%;
+            transform: rotate(325deg) scale(1.3);
+            transition: 0.7s;
+            
+        }
+
+        .conteudo-escrito:hover > .i4{
+            position: absolute;
+            right: 69%;
+            transition: 0.7s;
+        }
+      
     </style>
 </head>
 <body>
@@ -81,15 +176,15 @@
             <a href="../index.html" class="links-cabecalho">Calis-Mania</a>
         </nav>
     </header>
-    <hr class="comeco-cabecalho">
+    <hr>
     
     <main>
         
         <div class="conteiner">
             <h2 class="titulo-secundario">Como que eu sei? </h2>
-            <article class="conteudo-escrito">
-                <p>
-                    <i></i>
+            <article>
+                <p class="conteudo-escrito">
+                    <i class="i1"></i>
                     O ato de se desafiar e buscar novos desafios é o príncipio da calistenia.
                     Se você busca evoluir em cada treino e conquistar os movimentos mais cobiçados
                     do esporte, pode ter certeza que você está no caminho certo e a calistenia pode
@@ -99,23 +194,23 @@
         </article>
            
             <h2 class="titulo-secundario">E se eu for muito baixo ou muito alto? </h2>
-            <article class="conteudo-escrito">
-                <p>
-                    <i></i>
+            <article>
+                <p class="conteudo-escrito">
+                
+                    <i class="i2"></i>
                     Dependendo da sua altura você pode ter mais facilidade para realizar os movimentos.
                     Caso você seja uma pessoa mais baixa, a força exigida para isso será menor. Agora
                     sendo uma pessoa mais alta, a força aplicada terá que ser maior para compensar a
                     alavanca. Caso queira entender melhor sobre a questão da alavanca
-                    <a href="#"><strong>clique aqui.</strong></a>
+                    <a href="#"><strong class="alavanca">clique aqui.</strong></a>
                 </p>
               
-                    
-               
             </article>
 
         <h2 class="titulo-secundario">Vou ter um físico admíravel?</h2>
-        <article class="conteudo-escrito">
-            <p>
+        <article>
+            <p class="conteudo-escrito">
+                <i class="i3"></i>
                 Como a calistenia é um esporte que exige do seu corpo inteiro e o faz trabalhar como
                 uma unidade unica, você pode <strong>SIM</strong> conquistar um ótimo físico apenas se
                 utilizando do peso do seu próprio corpo.
@@ -123,8 +218,9 @@
         </article>
 
         <h2 class="titulo-secundario">Como faço para começar?</h2>
-        <article class="conteudo-escrito">
-            <p>
+        <article >
+            <p class="conteudo-escrito">
+                <i class="i4"></i>
                 Qualquer lugar já é lugar para começar a calistenia. O chão da sua casa e uma parede podem
                 ser uma ótima ajuda. Flexões, agachamentos, até mesmo exercícios para as costas são possíveis
                 para ter o condionamento necessário para fazer sua primeira barra.
@@ -137,7 +233,7 @@
 
     
     </main>
-    <hr class="comeco-rodape">
+    <hr>
 
     <footer class="rodape">
         <p class="texto-rodape">Desenvolvido por <strong>Breno Carvalho</strong></p>

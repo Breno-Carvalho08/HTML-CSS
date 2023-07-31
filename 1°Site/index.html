@@ -5,6 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Calis-Mania</title>
+    <style>
+        *{
+            outline: 0px solid transparent;
+        }
+
+article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.conteudo1{ 
+    display: flex;
+    flex-direction: column;
+    font-size: 36px;
+    margin: auto;
+}
+
+.titulo-conteudo{
+    color: white;
+    font-size: 40px;
+    margin: 50px 10px 50px 10px;
+    line-height: 1.2em;
+}
+
+.conteudo-texto{
+    
+    color: white;
+    font-size: 24px;
+    text-align: justify;
+    margin: 50px 10px 50px 10px;
+    line-height: 2em;
+   
+   
+}
+
+
+.conteudo-texto-2{
+    color: white;
+    font-size: 24px;
+
+}
+
+ .imagem-principal{
+    display: block;
+    margin: auto;
+    
+}
+
+.imagem{
+    width: 80%;
+    
+   
+}
+
+.botao{
+    width: 220px;
+    height: 70px;
+    margin: 30px;
+    outline: 2px solid black;
+    background-color:  rgb(112, 112, 112);
+    font-family: var(--fonte-textos);
+    font-weight: 700;
+    transition: 0.7s;
+    font-size: x-large;
+    border: 1px solid black;
+}
+
+.botao:hover{
+    color: rgb(100, 0, 0);
+    outline: 2px solid rgb(100, 0, 0);
+    box-shadow: 0px 0px 30px rgb(100, 0, 0);
+    transition: 0.7s;
+    letter-spacing: 2px;
+    width: 250px;
+    border: 1px solid rgb(100, 0, 0);
+    
+}
+
+
+
+
+.comeco-rodape{
+    border: 0.1px solid rgb(0, 0, 0);
+    margin-top: 100px;
+
+}
+
+ol{
+    width: 100%;
+}
+    </style>
  
 </head>
 <body>
@@ -17,13 +110,17 @@
             <a href="../1°Site/Paginas/Calistenia é para mim.html" class="links-cabecalho">Calistenia é para mim?</a>
         </nav>
     </header>
-    <hr class="comeco-cabecalho">
+    <hr>
 
     <main>
         <article>
                 <div class="conteudo1">
                     <p class="titulo-conteudo">Aprenda calistenia de uma forma fácil e inteligente!</p>
-                    <button class="botao"> Quero aprender </button>
+                    <button class="botao"> 
+                        
+                        Quero aprender 
+                    
+                    </button>
                 <aside>
                     <div class="conteudo-texto">
                         <ol>
@@ -37,13 +134,11 @@
                 </aside>
                 </div>
                 <div class="imagem-principal">
-                    <picture>
-                        <img class="imagem" src="Imagem.png" alt="Carinha fazendo barra">
-                    </picture>
+
                 </div> 
         </article>
     </main>
-    <hr class="comeco-rodape">
+    <hr>
 
     <footer class="rodape">
         <p class="texto-rodape">Desenvolvido por <strong>Breno Carvalho</strong></p>
