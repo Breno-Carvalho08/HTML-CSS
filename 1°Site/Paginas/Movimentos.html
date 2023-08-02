@@ -24,6 +24,13 @@
            
         }
 
+        div{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
         h2{
             
             padding: 20px; 
@@ -31,13 +38,19 @@
             line-height: 1.2em;
         }
 
+        .exercicios{
+            font-size: larger;
+
+        }
+
+
         .conteudo-escrito{
             width: 50%;
             line-height: 1.5em;
             outline: 3px solid rgb(39, 39, 39);
             padding: 5px;
             font-size: 20px;
-            margin: 30px;
+            margin: 20px;
             transition: 1s;
         }
 
@@ -68,10 +81,23 @@
 
         }
 
-        
-
-       
-     
+        .videos{
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+   
+        video{
+    
+            height: 310px;
+            width: 100%;
+            margin-bottom: 25px;
+            outline: 3px solid black;
+            
+        }
 
     </style>
 </head>
@@ -100,6 +126,11 @@
             </p>
         </article>
         <!--Imagens-->
+        <aside class="videos">
+            <div><p><strong class="exercicios">Flexão</strong></p><video autoplay controls src="Video/Flexão.mp4"></video></div>
+            <div><p><strong class="exercicios">Barra Fixa</strong></p><video autoplay controls src="Video/Barra.mp4"></video></div>
+            <div><p><strong class="exercicios">Squats</strong></p><video autoplay controls src="Video/squats.mp4"></video></div>
+        </aside>
         <hr class="separacao">
 
         <article>
