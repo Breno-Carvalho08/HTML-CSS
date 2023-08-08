@@ -7,10 +7,11 @@
     <style>
         body{
             height: 100vh;
+            /*
             background-image: url(Imagens/wallpaper002.jpg);
             background-position: center center;
             background-repeat: no-repeat;
-            background-color: black;
+            background-color: black;*/
 
             /*background-size: 100% 100%; /*PESSIMA SOLUÇÃO, a imagem fica toda distorcida*/
 
@@ -22,12 +23,23 @@
             já que ela vai se adaptar ao tamanho da janela do seu navegador.
             */
 
+            /* background-size: cover;
+            background-attachment: fixed;
+
+            
+            Short-Hand - Background
+            
+            color > image > positior > repeat > [size]   [size] -> ainda não funciona nessa short-hand, temos que colocar
+            ele separado da short-hand */
+
+            background: black url(Imagens/wallpaper002.jpg) center center no-repeat fixed;
             background-size: cover;
+            
 
         }
         main{
             background-color: white;
-            width: 600px;
+            max-width: 600px;
             padding: 5px;
             margin: auto;
             border-radius: 5px;
