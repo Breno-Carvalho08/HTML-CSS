@@ -16,6 +16,8 @@ body{
     line-height: 1.5em;
     text-align: justify;
     width: 100%;
+    background: rgb(112, 112, 112) url(Paginas/Imagens/wallpaper006.jpg) center center no-repeat;
+    background-size: cover;
 }
 
 h1{
