@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            background-image: url(Imagens/wallpaper002.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-color: black;
+            
+            /*background-size: 100% 100%; /*PESSIMA SOLUÇÃO, a imagem fica toda distorcida*/
+
+            /*background-size: contein; */ /*Pode até ajudar, mas dependendo do tamanho da imagem
+            corremos o risco de ficar com bordas pretas na parte inferior.
+            */
+
+            /*background-size: cover;*/ /*Seria o melhor para se projetar a imagem de fundo
+            já que ela vai se adaptar ao tamanho da janela do seu navegador.
+            */
+
+            background-size: cover;
+        }
+        main{
+            background-color: white;
+            width: 600px;
+            padding: 5px;
+            margin: auto;
+            border-radius: 5px;
+            border: 2px solid black;
+            line-height: 1.5em;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <h1>Testando Imagem de Fundo</h1>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Ullam iusto placeat, commodi nostrum blanditiis hic ex explicabo 
+            unde, voluptatum possimus 
+            inventore earum aperiam similique soluta ipsam. Et dolores animi 
+            nostrum?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Ullam iusto placeat, commodi nostrum blanditiis hic ex explicabo 
+            unde, voluptatum possimus 
+            inventore earum aperiam similique soluta ipsam. Et dolores animi 
+            nostrum?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Ullam iusto placeat, commodi nostrum blanditiis hic ex explicabo 
+            unde, voluptatum possimus 
+            inventore earum aperiam similique soluta ipsam. Et dolores animi 
+            nostrum?
+        </p>
+    </main>
+    
+</body>
+</html>
